@@ -35,37 +35,38 @@ function getComputerChoice() {
 function game() {
     getComputerChoice();
 
-    console.log("you chose "+playerChoice);
-    console.log("the computer chose "+compChoice);
-    
+    document.getElementById("details").textContent = "you chose "+playerChoice+
+        " & the computer chose "+compChoice;
+
+   
     if (playerChoice == "paper"){
         if (compChoice == "paper") {
-            console.log("draw");
+            document.getElementById("result").textContent = ". it's a draw";
         } else if (compChoice == "scissors") {
-            console.log("computer won!");
+            document.getElementById("result").textContent = ". the computer won";
             compScore += 1;
         } else {
-            console.log("you won!");
+            document.getElementById("result").textContent = ". you won!";
             playerScore += 1;
         }
     } else if (playerChoice == "rock") {
         if (compChoice == "rock") {
-            console.log("draw");
+            document.getElementById("result").textContent = ". it's a draw";
         } else if (compChoice == "paper") {
-            console.log("computer won!");
+            document.getElementById("result").textContent = ". the computer won";
             compScore += 1;
         } else {
-            console.log("you won!");
+            document.getElementById("result").textContent = ". you won!";
             playerScore += 1;
         }
     } else {
         if (compChoice == "scissors") {
-            console.log("draw");
+            document.getElementById("result").textContent = ". it's a draw";
         } else if (compChoice == "rock") {
-            console.log("computer won!");
+            document.getElementById("result").textContent = ". the computer won";
             compScore += 1;
         } else {
-            console.log("you won!");
+            document.getElementById("result").textContent = ". you won!";
             playerScore += 1;
         }
     }
