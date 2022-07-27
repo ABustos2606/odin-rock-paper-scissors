@@ -1,0 +1,19 @@
+.selection {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.selection h1 {
+    text-align: center;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+}
+
+.buttons input {
+    margin:0 10px;
+}
