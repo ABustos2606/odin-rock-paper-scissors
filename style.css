@@ -14,6 +14,7 @@
     height: 50px;
 }
 
-.btn-container input {
+.btn-container button {
     margin:0 10px;
+    width: 90px;
 }

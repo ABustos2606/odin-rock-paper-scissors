@@ -8,7 +8,13 @@ const options = document.querySelectorAll(".options");
 options.forEach((option) => {
     option.addEventListener("click", function () {
         playerChoice = this.textContent;
-        game();
+
+        if (compScore < 5 && playerScore < 5){
+            game();
+        } else {
+            
+        }
+        
 
     });
 });
@@ -64,6 +70,7 @@ function game() {
         }
     }
 
+    updateScore();
     console.log("player score = " +playerScore);
     console.log("computer score = " +compScore);
 
@@ -76,6 +83,11 @@ function game() {
     
                 
 }
+
+function updateScore() {
+    document.getElementById("pScore").textContent = playerScore;
+    document.getElementById("cScore").textContent = compScore;
+  }
 
 function result() {
     if (playerScore == 5) {
