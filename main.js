@@ -71,10 +71,9 @@ function game() {
         }
     }
 
-    updateScore();
-    console.log("player score = " +playerScore);
-    console.log("computer score = " +compScore);
-
+    document.getElementById("pScore").textContent = playerScore;
+    document.getElementById("cScore").textContent = compScore;
+    
     if (compScore < 5 && playerScore < 5){
         
     } else {
@@ -85,10 +84,7 @@ function game() {
                 
 }
 
-function updateScore() {
-    document.getElementById("pScore").textContent = playerScore;
-    document.getElementById("cScore").textContent = compScore;
-  }
+
 
 function result() {
     if (playerScore == 5) {
