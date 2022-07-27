@@ -3,6 +3,17 @@ var playerChoice = "";
 var compScore = 0;
 var playerScore = 0;
 
+const options = document.querySelectorAll(".options");
+
+options.forEach((option) => {
+    option.addEventListener("click", function () {
+        playerChoice = this.textContent;
+        game();
+
+    });
+});
+
+
 function getComputerChoice() {
     compChoice = Math.floor(Math.random() * 3);
     if (compChoice == 0) {
@@ -15,23 +26,9 @@ function getComputerChoice() {
     return compChoice;
 }
 
-function getPlayerChoice() {
-    playerChoice = prompt("Select your weapon between rock, paper and  scissors:").toLowerCase();
-    if (playerChoice == "rock" || playerChoice == "paper" || playerChoice == "scissors") {
-        return playerChoice;
-    } else {
-        badAnswer();
-    }
-}
-
-function badAnswer() {
-    alert("You didn't choose your weapon correctly.");
-    getPlayerChoice();
-}
-
 function game() {
     getComputerChoice();
-    getPlayerChoice();
+
     console.log("you chose "+playerChoice);
     console.log("the computer chose "+compChoice);
     
@@ -71,7 +68,7 @@ function game() {
     console.log("computer score = " +compScore);
 
     if (compScore < 5 && playerScore < 5){
-        game();
+        
     } else {
         result();
     }
@@ -89,5 +86,3 @@ function result() {
     console.log("Final results: You = "+playerScore+" - Computer = "+compScore);
 }
 
-
-game();

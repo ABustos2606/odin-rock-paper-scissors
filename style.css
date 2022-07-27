@@ -1,19 +1,19 @@
-.selection {
+.main {
     width: 70%;
     margin: 0 auto;
 }
 
-.selection h1 {
+.main h1 {
     text-align: center;
 }
 
-.buttons {
+.btn-container {
     display: flex;
     justify-content: center;
     align-items: center;
     height: 50px;
 }
 
-.buttons input {
+.btn-container input {
     margin:0 10px;
 }
