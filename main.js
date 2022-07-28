@@ -4,6 +4,7 @@ var compScore = 0;
 var playerScore = 0;
 
 const options = document.querySelectorAll(".options");
+const buttonPlayAgain = document.querySelector('.play-again');
 
 options.forEach((option) => {
     option.addEventListener("click", function () {
@@ -92,6 +93,11 @@ function result() {
     } else {
         document.getElementById("message").textContent = "The computer won the match";
     }
+    buttonPlayAgain.style.visibility = 'visible';
     
 }
+
+buttonPlayAgain.addEventListener('click', () => {
+    window.location.reload();
+  });
 

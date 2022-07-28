@@ -88,3 +88,32 @@ li {
     align-items: center;
 
 }
+
+.game-end {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.game-end button {
+    margin:0 10px;
+    width: 90px;
+    height: 90px;
+    background-color: #bb9f94;
+    border-radius:5%;
+    border: none;
+    font-size: 20px;
+}
+
+.game-end button:hover {
+    margin:0 10px;
+    width: 90px;
+    height: 90px;
+    background-color: #F5E8E4;
+    border-radius:5%;
+    border: none;
+}
+
+.play-again {
+    visibility: hidden;
+}
