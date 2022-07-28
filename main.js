@@ -7,7 +7,7 @@ const options = document.querySelectorAll(".options");
 
 options.forEach((option) => {
     option.addEventListener("click", function () {
-        playerChoice = this.textContent;
+        playerChoice = this.id;
 
         if (compScore < 5 && playerScore < 5){
             game();

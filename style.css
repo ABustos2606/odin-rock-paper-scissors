@@ -42,6 +42,7 @@ header .title {
     background-color: #bb9f94;
     border-radius:5%;
     border: none;
+    font-size: 60px;
 }
 
 .btn-container button:hover {
