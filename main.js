@@ -88,10 +88,10 @@ function game() {
 
 function result() {
     if (playerScore == 5) {
-        console.log("You won the match!");
+        document.getElementById("message").textContent = "You won the match!";
     } else {
-        console.log("The computer won the match");
+        document.getElementById("message").textContent = "The computer won the match";
     }
-    console.log("Final results: You = "+playerScore+" - Computer = "+compScore);
+    
 }
 
