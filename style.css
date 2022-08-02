@@ -84,15 +84,21 @@ li {
 
 .info {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
+}
+
+.info p {
+    margin-bottom:0;
 }
 
 .game-end {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .game-end button {
@@ -116,4 +122,21 @@ li {
 
 .play-again {
     visibility: hidden;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
+
+footer p {
+    font-size: smaller;
+}
+
+footer a {
+    color: #bb9f94;
+}
+
+footer a:hover {
+    color: #8b8481;
 }
